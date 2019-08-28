@@ -10,5 +10,11 @@ import org.springframework.web.servlet.config.annotation.EnableWebMvc;
 @ComponentScan(basePackages={"spitter"},excludeFilters={@Filter(type=FilterType.ANNOTATION,value=EnableWebMvc.class)})
 public class RootConfig {
 	
+	    
+	private void syso() {
+		// TODO Auto-generated method stub
+
+	}
+	
 	
 }
