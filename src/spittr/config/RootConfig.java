@@ -15,6 +15,10 @@ public class RootConfig {
 		// TODO Auto-generated method stub
 
 	}
+	private void string() {
+		// TODO Auto-generated method stub
+
+	}
 	
 	
 }
