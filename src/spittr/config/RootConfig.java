@@ -11,7 +11,9 @@ import org.springframework.context.annotation.Configuration;
 import org.springframework.context.annotation.FilterType;
 import org.springframework.web.servlet.config.annotation.EnableWebMvc;
 
+import spittr.Spitter;
 import spittr.Spittle;
+import spittr.data.SpitterRepository;
 import spittr.data.SpittleRepository;
 
 @Configuration
@@ -30,6 +32,17 @@ public class RootConfig {
 			}
 		};
 		
+	}
+	@Bean
+	public SpitterRepository spitterRepository(){
+		return new SpitterRepository() {
+			
+			@Override
+			public void save(Spitter spitter) {
+				System.out.println("###############");
+				
+			}
+		};
 	}
 	
 	

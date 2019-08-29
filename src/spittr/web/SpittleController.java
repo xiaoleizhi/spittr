@@ -17,9 +17,15 @@ public class SpittleController {
 	public SpittleController(SpittleRepository spittleRepository) {
 		this.spittleRepository = spittleRepository;
 	}
+	/**
+	 * ÁÐ±í¿ØÖÆÆ÷
+	 * @param model
+	 * @return
+	 */
 	@RequestMapping(method=RequestMethod.GET)
 	public String spittles(Model model){
 		model.addAttribute("spittles",spittleRepository.findSpittles(Long.MAX_VALUE, 20));
 		return "spittles";
 	}
+	
 }
