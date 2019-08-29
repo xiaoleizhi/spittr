@@ -11,7 +11,7 @@ import spittr.data.SpittleRepository;
 @Controller
 @RequestMapping("/spittles")
 public class SpittleController {
-
+	
 	private SpittleRepository spittleRepository;
 	@Autowired
 	public SpittleController(SpittleRepository spittleRepository) {
